@@ -93,5 +93,5 @@ class LandingMap extends React.Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyDVzNtDoUQUObd43cQCfN8Z5Wr7mK2SlLo'
+    apiKey: 'API KEY'
 })(LandingMap);
