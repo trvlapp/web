@@ -1,0 +1,85 @@
+.header {
+    position: absolute;
+    display: flex;
+    ustify-content: space-between;
+    z-index: 99;
+    width: calc(100vw - 40px);
+    height: 60px;
+    background-color: #3399ff;
+    margin: 20px;
+    overflow: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+}
+
+.header .trippie {
+    width: 200px;
+}
+
+.header .trippie h1 {
+    font-weight: 600;
+}
+
+.header .space {
+    width: calc(100vw - 700px);
+}
+
+.header .login  {
+    width: 500px;
+}
+
+.header .login form {
+    display: flex;
+}
+
+.header .login .block-1 {
+    margin-left: 50px;
+    width: 148px;
+}
+
+.header .login label.input {
+    color: #fff;
+    margin-top: 10px;
+    display: block;
+    font-size: 0.75rem;
+}
+
+.header .login input.input {
+    height: 20px;
+    width: 130px;
+    margin-top: 3px;
+    border-style:solid;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.header .login button.submit {
+    height: 24px;
+    margin-top: 2px;
+    margin: 27px 8px 0;
+    padding: 5px 15px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #004d99;
+    color: #fff;
+}
+
+.header .login button.submit:hover {
+    cursor: pointer;
+}
+
+.header h1 {
+    margin: 10px 30px;
+    font-size: 2rem;
+    color: #fff;
+}
+

@@ -1,33 +1,266 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    min-height: calc(100vh - 65px);
+    min-width: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.landing .landing-map {
+    position: relative !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    cursor: default !important;
 }
 
-.App-link {
-  color: #61dafb;
+.landing .landing-map {
+    cursor: default !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing h3 {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.landing .about {
+    position: absolute;
+    top: 18vh;
+    left: 8vw;
+    height: 300px;
+    width: 450px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+    padding: 30px;
+}
+
+.landing .about img {
+    width: 96%;
+    margin: 0 2%;
+}
+
+.landing .about h1 {
+    margin: 0;
+}
+
+.landing .post-container {
+    position: absolute;
+    top: 17vh;
+    z-index: 99;
+    left: calc(24vw + 450px);
+    overflow: hidden;
+    height: 463px;
+    width: 275px;
+    background-color: #f2f2f2;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+}
+
+.landing .top {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.landing .post-container .top {
+    height: 45px;
+}
+
+.landing .trips-container .top {
+    height: 95px;
+}
+
+
+.landing .top .feed {
+    display: inline;
+    padding: 15px 45px;
+}
+
+.landing .top .feed h1 {
+    display: inline;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.landing .top .icon {
+    margin: 12px 20px;
+}
+
+.trips-container .top .space {
+    width: 162px;
+    height: 40px;
+}
+
+.post-container .post-header {
+    overflow: hidden;
+    width: 100%;
+    height: 45px;
+    background-color: #efefef;
+}
+
+.post-container .post-header .avatar {
+    float: left;
+    height: 35px;
+    margin: 5px 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.post-container .post-header h2 {
+    margin: 5px 0 0 55px;
+    font-size: 1.1rem;
+}
+
+.post-container .post-header h3 {
+    margin: 0 0 0 55px;
+    font-size: 0.7rem;
+    line-height: 0.85rem;
+}
+
+.post-container .post-body {
+    width: 100%;
+    height: 206px;
+}
+
+.post-container .post-body img.post {
+    width: 100%;
+}
+
+.post-container .post-footer {
+    width: 100%;
+    height: 110px;
+    background-color: #fff;
+}
+
+.post-container .post-footer .icon {
+    display: inline;
+}
+
+.post-container .post-footer .icon.heart {
+    margin: 8px 0 5px 15px;
+    color: #ff6666;
+}
+
+.post-container .post-footer .icon.comment {
+    margin: 8px 0 5px 8px;
+}
+
+.post-container .post-footer .likes {
+    float: right;
+    margin: 8px 12px 5px;
+    font-size: 0.75rem;
+}
+
+.post-container .post-footer .desc {
+    padding-left: 12px;
+    margin-top: -5px;
+}
+
+.post-container .post-footer .desc h2.username {
+    display: inline;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    font-weight: 400;
+    margin: 0 5px 5px 0;
+}
+
+.post-container .post-footer .desc p {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    font-weight: 300;
+    margin: 0 5px 5px 0;
+}
+
+.post-container .post-footer .buttons {
+    display: flex;
+}
+
+.post-container .post-footer .buttons .button {
+    width: calc(33.3% - 20px);
+    text-align: center;
+    padding: 4px 0;
+    font-size: 0.75rem;
+    margin: 0 10px;
+}
+
+.post-container .post-footer .buttons .go {
+    background-color: #009933;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.post-container .post-footer .buttons .been {
+    background-color: #0033cc;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.post-container .post-footer .buttons .no {
+    background-color: #b32400;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.post-container .footer-buttons {
+    display: flex;
+    text-align: center;
+}
+
+.post-container .footer-buttons p {
+    margin: 0 0 5px 0;
+    font-size: 0.75rem;
+}
+
+.post-container .footer-buttons .icon {
+    margin: 8px auto 0;
+}
+
+.post-container .footer-buttons .button {
+    width: 20%;
+}
+
+.post-container .footer-buttons .button.feed {
+    background-color: #d9d9d9;
+}
+
+.landing .trips-container {
+    position: absolute;
+    top: 30vh;
+    right: 8vw;
+    height: 460px;
+    width: 275px;
+    background-color: #f2f2f2;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.6);
 }
